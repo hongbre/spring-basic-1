@@ -3,7 +3,6 @@ package spring.basic.order;
 import spring.basic.discount.DiscountPolicy;
 import spring.basic.member.Member;
 import spring.basic.member.MemberRepository;
-import spring.basic.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository;

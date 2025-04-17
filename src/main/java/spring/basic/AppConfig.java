@@ -3,7 +3,6 @@ package spring.basic;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import spring.basic.discount.DiscountPolicy;
-import spring.basic.discount.FixDiscountPolicy;
 import spring.basic.discount.RateDiscountPolicy;
 import spring.basic.member.MemberRepository;
 import spring.basic.member.MemberService;
@@ -31,7 +30,6 @@ public class AppConfig {
 
     @Bean
     public DiscountPolicy discountPolicy() {
-//        return new FixDiscountPolicy();
         return new RateDiscountPolicy();
     }
 }
